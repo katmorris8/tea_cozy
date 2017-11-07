@@ -18,8 +18,9 @@ div {
   flex-wrap: wrap;
   border-bottom: 1px solid seashell;
   height: 69px;
-  padding: 10px 10px;
   width: 100%;
+  padding: 10px 10px;
+  margin: 0;
   background-color: black;
   align-items: center;
   z-index: 1;
@@ -48,21 +49,28 @@ div {
 }
 
 .content {
+  margin: auto;
   padding-top: 70px;
-  margin: 0;
 }
 
 #mission {
-  display: inline-block;
-  background-image: url("./resources/images/img-mission-background.jpg");
+  background-image: url("../resources/images/img-mission-background.jpg");
   height: 700px;
-  width: auto;
+  width: 1200px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.mission {
-  background-color: black;
+.mission-container {
+  display: flex;
   width: 1200px;
+}
+
+.mission-statement {
+  display: block;
+  background-color: black;
+  width: 100%;
 }
 
 .tea {
@@ -72,11 +80,17 @@ div {
 .items-container {
   display: flex;
   width: 1000px;
+  height: 700px;
+  margin: auto;
+}
+
+.items {
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .items img {
   justify-content: center;
-  flex-wrap: wrap;
   height: 200px;
   width: 300px;
 }
