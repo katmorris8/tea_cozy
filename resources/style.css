@@ -7,32 +7,49 @@ html {
   text-align: center;
 }
 
+div {
+  display: block;
+}
+
 .header {
-  z-index: 10;
   position: fixed;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid seashell;
   height: 69px;
   padding: 10px 10px;
   width: 100%;
   background-color: black;
+  align-items: center;
+  z-index: 1;
 }
 
-.header.logo {
+.header.logo img {
   height: 50px;
 }
 
 .header nav {
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
+  display: inline-block;
   font-family: Helvetica;
   font-size: 22px;
+  color: seashell;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.header span {
+    padding: 20px 10px;
+    text-decoration: underline;
+}
+
+.header a {
   color: seashell;
 }
 
 .content {
   padding-top: 70px;
+  margin: 0;
 }
 
 #mission {
@@ -40,9 +57,26 @@ html {
   background-image: url("./resources/images/img-mission-background.jpg");
   height: 700px;
   width: auto;
+  align-items: center;
 }
 
 .mission {
   background-color: black;
   width: 1200px;
+}
+
+.tea {
+  display: block;
+}
+
+.items-container {
+  display: flex;
+  width: 1000px;
+}
+
+.items img {
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 300px;
 }
