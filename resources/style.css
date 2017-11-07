@@ -8,9 +8,41 @@ html {
 }
 
 .header {
-  display: flex;
+  z-index: 10;
+  position: fixed;
+  display: inline-flex;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  padding: 10px 10px;
+  width: 100%;
+  background-color: black;
 }
 
-.logo {
+.header.logo {
   height: 50px;
+}
+
+.header nav {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+}
+
+.content {
+  padding-top: 70px;
+}
+
+#mission {
+  display: inline-block;
+  background-image: url("./resources/images/img-mission-background.jpg");
+  height: 700px;
+  width: auto;
+}
+
+.mission {
+  background-color: black;
+  width: 1200px;
 }
