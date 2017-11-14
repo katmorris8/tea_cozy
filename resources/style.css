@@ -7,6 +7,11 @@ html {
   text-align: center;
 }
 
+h2, h3, h4 {
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -64,7 +69,6 @@ html {
   align-items: center;
   background-color: black;
   width: 100%;
-  margin: 0;
 }
 
 .tea {
@@ -129,7 +133,11 @@ html {
   margin: 5px 20px;
 }
 
-h2, h3, h4 {
-  margin: 0;
-  padding: 10px;
+#contact {
+  height: 200px;
+}
+
+.copyright {
+  text-align: left;
+  padding-left: 20px;
 }
