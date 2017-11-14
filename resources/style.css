@@ -76,7 +76,7 @@ html {
   height: 700px;
   display: block;
   margin: 0 auto;
-
+  padding-top: 70px;
 }
 
 .items-container {
@@ -103,4 +103,33 @@ html {
 .items span {
   display: block;
   padding: 5px;
+}
+
+#locations {
+  background-image: url("../resources/images/img-locations-background.jpg");
+  padding-top: 70px;
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.locations-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.location {
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 20px;
+}
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
 }
